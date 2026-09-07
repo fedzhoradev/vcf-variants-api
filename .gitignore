@@ -10,4 +10,5 @@ htmlcov/
 data/*.vcf
 data/*.vcf.gz
 *.lock
-
+.idea/
+*.iml
