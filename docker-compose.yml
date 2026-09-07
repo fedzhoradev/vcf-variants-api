@@ -1,0 +1,10 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      VCF_FILE: /data/input.vcf.gz
+      API_SECRET: ${API_SECRET:-change-me}
+    volumes:
+      - ${VCF_DIRECTORY:-./data}:/data
